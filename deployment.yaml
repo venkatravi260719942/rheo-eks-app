@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: register-app-deployment
+  name: rheo-app-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: register-app
+      app: rheor-app
   template:
     metadata:
       labels:
-        app: register-app
+        app: rheo-app
     spec:
       containers:
-        - name: register-app
-          image: ashfaque9x/register-app-pipeline:1.0.0-9
+        - name: rheo-app
+          image: 211125528700.dkr.ecr.us-west-2.amazonaws.com/rheo-flask-app:latest
           resources:
             limits:
               memory: "256Mi"
