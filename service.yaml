@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: register-app-service
+  name: rheo-app-service
   labels:
-    app: register-app 
+    app: rheo-app 
 spec:
   selector:
-    app: register-app
+    app: rheo-app
 
   ports:
     - port: 8080
