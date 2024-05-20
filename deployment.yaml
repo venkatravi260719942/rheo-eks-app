@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: rheo-app
-          image: 211125528700.dkr.ecr.us-west-2.amazonaws.com/rheo-flask-app:latest
+          image: public.ecr.aws/p5u3f5g6/rheo-flask-app-pub:latest
           resources:
             limits:
               memory: "256Mi"
